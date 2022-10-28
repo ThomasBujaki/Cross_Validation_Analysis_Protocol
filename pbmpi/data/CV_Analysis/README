@@ -1,0 +1,5 @@
+To do a CV analysis ensure analysis_parameters has the correct values then:
+	1. run do_mpi_cvrep.sh # Warning, this program uses integer math so the splitting of the alignment is not perfect
+	2. run do_pb_mpi.sh 
+	3. run do_readpb_mpi.sh # runs fine but I do not know how to do the compairision between model CV scores in mpi
+	
