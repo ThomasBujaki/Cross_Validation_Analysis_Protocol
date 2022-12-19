@@ -1,0 +1,144 @@
+alignment_file: regier.phy
+base_name: cvb
+nrep: 5
+nfold: 5
+save_freq: 1
+chain_length: 1500
+burnin: 500
+readcv_check_freq: 1
+nodes_used: 0 1 2 4 5 6 7 8 9 10 11 12 13 14 15
+#first one needs to be compairision model for sumcv
+model:	-gtr
+model:	-cat -uni
+model:	-cat
+model:	-cat -gtr -uni
+model:	-cat -gtr
+model:	-poisson -ncat 1 -uni
+model:	-poisson -ncat 2 -uni
+model:	-poisson -ncat 3 -uni
+model:	-poisson -ncat 4 -uni
+model:	-poisson -ncat 5 -uni
+model:	-poisson -ncat 6 -uni
+model:	-poisson -ncat 7 -uni
+model:	-poisson -ncat 8 -uni
+model:	-poisson -ncat 9 -uni
+model:	-poisson -ncat 10 -uni
+model:	-poisson -ncat 20 -uni
+model:	-poisson -ncat 30 -uni
+model:	-poisson -ncat 40 -uni
+model:	-poisson -ncat 50 -uni
+model:	-poisson -ncat 60 -uni
+model:	-poisson -ncat 70 -uni
+model:	-poisson -ncat 80 -uni
+model:	-poisson -ncat 90 -uni
+model:	-poisson -ncat 100 -uni
+model:	-poisson -ncat 1
+model:	-poisson -ncat 2
+model:	-poisson -ncat 3
+model:	-poisson -ncat 4
+model:	-poisson -ncat 5
+model:	-poisson -ncat 6
+model:	-poisson -ncat 7
+model:	-poisson -ncat 8
+model:	-poisson -ncat 9
+model:	-poisson -ncat 10
+model:	-poisson -ncat 20
+model:	-poisson -ncat 30
+model:	-poisson -ncat 40
+model:	-poisson -ncat 50
+model:	-poisson -ncat 60
+model:	-poisson -ncat 70
+model:	-poisson -ncat 80
+model:	-poisson -ncat 90
+model:	-poisson -ncat 100
+model:	-gtr -ncat 1 -uni
+model:	-gtr -ncat 2 -uni
+model:	-gtr -ncat 3 -uni
+model:	-gtr -ncat 4 -uni
+model:	-gtr -ncat 5 -uni
+model:	-gtr -ncat 6 -uni
+model:	-gtr -ncat 7 -uni
+model:	-gtr -ncat 8 -uni
+model:	-gtr -ncat 9 -uni
+model:	-gtr -ncat 10 -uni
+model:	-gtr -ncat 20 -uni
+model:	-gtr -ncat 30 -uni
+model:	-gtr -ncat 40 -uni
+model:	-gtr -ncat 50 -uni
+model:	-gtr -ncat 60 -uni
+model:	-gtr -ncat 70 -uni
+model:	-gtr -ncat 80 -uni
+model:	-gtr -ncat 90 -uni
+model:	-gtr -ncat 100 -uni
+model:	-gtr -ncat 1
+model:	-gtr -ncat 2 
+model:	-gtr -ncat 3 
+model:	-gtr -ncat 4 
+model:	-gtr -ncat 5 
+model:	-gtr -ncat 6 
+model:	-gtr -ncat 7 
+model:	-gtr -ncat 8 
+model:	-gtr -ncat 9 
+model:	-gtr -ncat 10
+model:	-gtr -ncat 20
+model:	-gtr -ncat 30
+model:	-gtr -ncat 40
+model:	-gtr -ncat 50
+model:	-gtr -ncat 60
+model:	-gtr -ncat 70
+model:	-gtr -ncat 80
+model:	-gtr -ncat 90
+model:	-gtr -ncat 100
+model:	-catfix C10 -uni
+model:	-catfix C20 -uni
+model:	-catfix C30 -uni
+model:	-catfix C40 -uni
+model:	-catfix C50 -uni
+model:	-catfix C60 -uni
+model:	-catfix C10
+model:	-catfix C20
+model:	-catfix C30
+model:	-catfix C40
+model:	-catfix C50
+model:	-catfix C60
+model:	-gtr -catfix C10 -uni
+model:	-gtr -catfix C20 -uni
+model:	-gtr -catfix C30 -uni
+model:	-gtr -catfix C40 -uni
+model:	-gtr -catfix C50 -uni
+model:	-gtr -catfix C60 -uni
+model:	-gtr -catfix C10
+model:	-gtr -catfix C20
+model:	-gtr -catfix C30
+model:	-gtr -catfix C40
+model:	-gtr -catfix C50
+model:	-gtr -catfix C60
+# need to be relative to the submit scripts path since that is where the files are called from
+model:	-poisson -uni -catfix $(pwd)/../UDM_components/hogenom_lclr_004_pb.txt
+model:	-poisson -uni -catfix $(pwd)/../UDM_components/hogenom_lclr_008_pb.txt
+model:	-poisson -uni -catfix $(pwd)/../UDM_components/hogenom_lclr_016_pb.txt
+model:	-poisson -uni -catfix $(pwd)/../UDM_components/hogenom_lclr_032_pb.txt
+model:	-poisson -uni -catfix $(pwd)/../UDM_components/hogenom_lclr_064_pb.txt
+model:	-poisson -uni -catfix $(pwd)/../UDM_components/hogenom_lclr_128_pb.txt
+model:	-poisson -uni -catfix $(pwd)/../UDM_components/hogenom_lclr_256_pb.txt
+model:	-poisson -catfix $(pwd)/../UDM_components/hogenom_lclr_004_pb.txt
+model:	-poisson -catfix $(pwd)/../UDM_components/hogenom_lclr_008_pb.txt
+model:	-poisson -catfix $(pwd)/../UDM_components/hogenom_lclr_016_pb.txt
+model:	-poisson -catfix $(pwd)/../UDM_components/hogenom_lclr_032_pb.txt
+model:	-poisson -catfix $(pwd)/../UDM_components/hogenom_lclr_064_pb.txt
+model:	-poisson -catfix $(pwd)/../UDM_components/hogenom_lclr_128_pb.txt
+model:	-poisson -catfix $(pwd)/../UDM_components/hogenom_lclr_256_pb.txt
+model:	-gtr -uni -catfix $(pwd)/../UDM_components/hogenom_lclr_004_pb.txt
+model:	-gtr -uni -catfix $(pwd)/../UDM_components/hogenom_lclr_008_pb.txt
+model:	-gtr -uni -catfix $(pwd)/../UDM_components/hogenom_lclr_016_pb.txt
+model:	-gtr -uni -catfix $(pwd)/../UDM_components/hogenom_lclr_032_pb.txt
+model:	-gtr -uni -catfix $(pwd)/../UDM_components/hogenom_lclr_064_pb.txt
+model:	-gtr -uni -catfix $(pwd)/../UDM_components/hogenom_lclr_128_pb.txt
+model:	-gtr -uni -catfix $(pwd)/../UDM_components/hogenom_lclr_256_pb.txt
+model:	-gtr -catfix $(pwd)/../UDM_components/hogenom_lclr_004_pb.txt
+model:	-gtr -catfix $(pwd)/../UDM_components/hogenom_lclr_008_pb.txt
+model:	-gtr -catfix $(pwd)/../UDM_components/hogenom_lclr_016_pb.txt
+model:	-gtr -catfix $(pwd)/../UDM_components/hogenom_lclr_032_pb.txt
+model:	-gtr -catfix $(pwd)/../UDM_components/hogenom_lclr_064_pb.txt
+model:	-gtr -catfix $(pwd)/../UDM_components/hogenom_lclr_128_pb.txt
+model:	-gtr -catfix $(pwd)/../UDM_components/hogenom_lclr_256_pb.txt

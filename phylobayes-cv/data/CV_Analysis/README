@@ -1,0 +1,5 @@
+To do a CV analysis ensure analysis_parameters has the correct values then:
+	1. run do_cvrep.sh
+	2. run do_pb.sh
+	3. run do_readcv.sh
+	4. run do_sumcv.sh
