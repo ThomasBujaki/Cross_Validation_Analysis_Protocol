@@ -10,23 +10,23 @@ readcv_check_freq: 1
 nodes_used: 0 1 2 4 5 6 7 8 9 10 11 12 13 14 15
 #first one needs to be compairision model for sumcv
 model:	-gtr
-model:	-cat -uni
+model:	-cat -dgam 1
 model:	-cat
-model:	-cat -gtr -uni
+model:	-cat -gtr -dgam 1
 model:	-cat -gtr
-model:	-poisson -ncat 1 -uni
-model:	-poisson -ncat 2 -uni
-model:	-poisson -ncat 3 -uni
-model:	-poisson -ncat 4 -uni
-model:	-poisson -ncat 5 -uni
-model:	-poisson -ncat 6 -uni
-model:	-poisson -ncat 7 -uni
-model:	-poisson -ncat 8 -uni
-model:	-poisson -ncat 9 -uni
-model:	-poisson -ncat 10 -uni
-model:	-poisson -ncat 20 -uni
-model:	-poisson -ncat 30 -uni
-model:	-poisson -ncat 40 -uni
+model:	-poisson -ncat 1 -dgam 1
+model:	-poisson -ncat 2 -dgam 1
+model:	-poisson -ncat 3 -dgam 1
+model:	-poisson -ncat 4 -dgam 1
+model:	-poisson -ncat 5 -dgam 1
+model:	-poisson -ncat 6 -dgam 1
+model:	-poisson -ncat 7 -dgam 1
+model:	-poisson -ncat 8 -dgam 1
+model:	-poisson -ncat 9 -dgam 1
+model:	-poisson -ncat 10 -dgam 1
+model:	-poisson -ncat 20 -dgam 1
+model:	-poisson -ncat 30 -dgam 1
+model:	-poisson -ncat 40 -dgam 1
 model:	-poisson -ncat 1
 model:	-poisson -ncat 2
 model:	-poisson -ncat 3
